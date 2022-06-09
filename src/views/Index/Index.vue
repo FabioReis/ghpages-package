@@ -1,6 +1,11 @@
 <template>
   <div id="index">
+    Main View
 
+    <br />
+    <br />
+
+    <a href="#/DefaultView">Another view</a>
   </div>
 </template>
 <script>

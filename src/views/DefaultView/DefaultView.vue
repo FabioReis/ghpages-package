@@ -1,6 +1,6 @@
 <template>
     <div id="defaultView">
-        TEST
+        Defautl View
     </div>
 </template>
 <script>

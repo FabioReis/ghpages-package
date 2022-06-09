@@ -1,9 +1,9 @@
 <template>
   <div id="main">
-    <mt-header title="登录">
+    <mt-header title="Vue App">
       <div slot="left">
         <a @click="back">
-          <mt-button icon="back">返回</mt-button>
+          <mt-button icon="back">back</mt-button>
         </a>
       </div>
     </mt-header>
@@ -27,6 +27,7 @@
     methods: {
       back () {
         // do something back
+        this.$router.go(-1)
       }
     }
   }
