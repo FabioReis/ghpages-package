@@ -12,6 +12,14 @@ export default [
   }
   /* eslint-disable */
   /* inject start */
-
+  ,
+  {
+    path: '/defaultView',
+    name: 'defaultView',
+    component: function(resolve) {
+      require(['../views/DefaultView/DefaultView.vue'], resolve)
+    }
+  }
   /* inject end */
+
 ]

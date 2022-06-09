@@ -10,6 +10,7 @@ import plugins from './plugins'
 
 // 引入不同页面自由的 module
 /* inject:import start */
+import DefaultView from './modules/defaultView'
 import Index from './modules/index'
 /* inject:import end */
 
@@ -28,7 +29,9 @@ export default new Vuex.Store({
   plugins,
   modules: {
     /* inject start */
+    defaultView: DefaultView,
     index: Index
     /* inject end */
+
   }
 })

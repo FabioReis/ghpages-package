@@ -1,6 +1,7 @@
 var path = require('path')
 var utils = require('./utils')
 var webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var config = require('../config')
 var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
@@ -31,9 +32,12 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
+    new UglifyJsPlugin({
+      test: /\.js($|\?)/i,
+      uglifyOptions: {
+        compress: {
+          warnings: false,
+        }
       },
       sourceMap: true
     }),
