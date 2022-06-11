@@ -12,6 +12,7 @@ import plugins from './plugins'
 /* inject:import start */
 import DefaultView from './modules/defaultView'
 import Index from './modules/index'
+import SecondView from './modules/secondView'
 /* inject:import end */
 
 Vue.use(Vuex)
@@ -30,7 +31,8 @@ export default new Vuex.Store({
   modules: {
     /* inject start */
     defaultView: DefaultView,
-    index: Index
+    index: Index,
+    secondView: SecondView
     /* inject end */
 
   }

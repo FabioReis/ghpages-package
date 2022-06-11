@@ -19,7 +19,15 @@ export default [
     component: function(resolve) {
       require(['../views/DefaultView/DefaultView.vue'], resolve)
     }
+  },
+  {
+    path: '/secondView',
+    name: 'secondView',
+    component: function(resolve) {
+      require(['../views/SecondView/SecondView.vue'], resolve)
+    }
   }
   /* inject end */
+
 
 ]
