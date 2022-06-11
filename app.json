@@ -9,10 +9,12 @@
   ],
   "env": {
     "NODE_ENV": {
-      "required": true
+      "required": true,
+      "value": "development"
     },
     "NPM_CONFIG_PRODUCTION": {
-      "required": true
+      "required": true,
+      "value": false
     }
   },
   "formation": {
