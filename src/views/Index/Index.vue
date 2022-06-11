@@ -5,7 +5,8 @@
     <br />
     <br />
 
-    <a href="#/DefaultView">Another view</a>
+    <a href="#/DefaultView">Another view</a><br />
+    <a href="#/ThirdView">ThirdView</a><br />
   </div>
 </template>
 <script>
